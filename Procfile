@@ -1,2 +1,2 @@
 release: python manage.py migrate --noinput
-web: gunicorn financas.wsgi --log-file -
+web: gunicorn sistransporte.wsgi --log-file -
