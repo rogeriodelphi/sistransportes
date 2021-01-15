@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.py[cod]
+
+
+# Distribution / packaging
+.Python
+env/
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+include/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# PyBuilder
+target/
+
+*.sqlite3
+db.sqlite3
+*.env
+*.DS_Store
+
+.venv/
+venv*/
+venvfinancas/
+staticfiles/
+.ipynb_checkpoints/
+.idea/
+
+*.bak
+*.jpg
+
+#nootebook
+*.ipynb
