@@ -2,11 +2,13 @@
 __pycache__/
 *.pyc
 *.py[cod]
+*$py.class
 
+# C extensions
+*.so
 
 # Distribution / packaging
 .Python
-env/
 bin/
 build/
 develop-eggs/
@@ -23,6 +25,47 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+staticfiles
+
+# Environments
+.venv
+env/
+venv/
+venv*/
+.venv/
+ENV/
+.env
+*.env
+env.bak/
+venv.bak/
 
 
 # PyBuilder
@@ -30,11 +73,11 @@ target/
 
 *.sqlite3
 db.sqlite3
-*.env
+
 *.DS_Store
 
-.venv/
-venv*/
+
+
 venvfinancas/
 staticfiles/
 .ipynb_checkpoints/
@@ -43,5 +86,10 @@ staticfiles/
 *.bak
 *.jpg
 
-#nootebook
+# Jupyter Notebook
+.ipynb_checkpoints
 *.ipynb
+
+
+# postres files for local developemnt
+.pgdata
