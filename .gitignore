@@ -93,3 +93,6 @@ staticfiles/
 
 # postres files for local developemnt
 .pgdata
+
+# contrib
+contrib/
