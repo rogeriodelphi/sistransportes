@@ -182,9 +182,8 @@ if AWS_ACCESS_KEY_ID:
     AWS_QUERYSTRING_AUTH = True
     AWS_S3_CUSTOM_DOMAIN = None
 
-
-    # COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
-    # COLLECTFAST_ENABLED = True
+    COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+    COLLECTFAST_ENABLED = True
 
     AWS_DEFAULT_ACL = 'private'
 
@@ -206,6 +205,7 @@ if AWS_ACCESS_KEY_ID:
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
+
 
 # LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = 'index'
