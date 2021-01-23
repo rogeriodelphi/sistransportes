@@ -182,6 +182,7 @@ if AWS_ACCESS_KEY_ID:
     AWS_QUERYSTRING_AUTH = True
     AWS_S3_CUSTOM_DOMAIN = None
 
+
     COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
     COLLECTFAST_ENABLED = True
 
@@ -193,7 +194,11 @@ if AWS_ACCESS_KEY_ID:
     STATIC_S3_PATH = 'static'
     STATIC_ROOT = f'/{STATIC_S3_PATH}/'
     STATIC_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{STATIC_S3_PATH}/'
+    print('STATIC_S3_PATH: ' + STATIC_ROOT)
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+
+    # print('STATIC_S3_PATH: ' + STATIC_ROOT)
+    # print('STATIC_URL: ' + STATIC_URL)
 
     # ------------------------------------------------------------------------------
 
@@ -205,7 +210,6 @@ if AWS_ACCESS_KEY_ID:
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
-
 
 # LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = 'index'
