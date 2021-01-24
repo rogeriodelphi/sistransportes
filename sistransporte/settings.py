@@ -186,10 +186,7 @@ if AWS_ACCESS_KEY_ID:
     print('STATIC_S3_PATH: ' + STATIC_ROOT)
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
-    # print('STATIC_S3_PATH: ' + STATIC_ROOT)
-    # print('STATIC_URL: ' + STATIC_URL)
-
-    # ------------------------------------------------------------------------------
+   # ------------------------------------------------------------------------------
 
     # Upload Media Folder
     DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
