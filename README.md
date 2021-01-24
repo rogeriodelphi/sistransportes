@@ -19,3 +19,4 @@ Para conferir a qualidade do código:
 ```console
 flake8
 ```
+
