@@ -1,6 +1,5 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
 *.py[cod]
 *$py.class
 
@@ -9,23 +8,23 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-bin/
+env/
 build/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
-include/
 lib/
 lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
+dumps/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -47,47 +46,78 @@ nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
-.pytest_cache/
+
+# Translations
+*.mo
+*.pot
 
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 staticfiles/
 
-# Environments
-.venv
-env/
-venv/
-venv*/
-.venv/
-ENV/
-.env
-*.env
-env.bak/
-venv.bak/
+# Flask stuff:
+instance/
+.webassets-cache
 
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
 
 # PyBuilder
 target/
 
-*.sqlite3
-
-*.DS_Store
-
-
-
-
-.ipynb_checkpoints/
-.idea/
-
-*.bak
-*.jpg
-
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
 
+# pyenv
+.python-version
 
-# postres files for local developemnt
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Vscode
+
+.vscode
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+#dynaconf settings
+/settings.yml
+/frontend/css/
+/frontend/node_modules/
+
+# no including dumps
+*.dump
+
+pythonpro-website/.pytest_cache/
+mediafiles/
+
+.pytest_cache/
+
+# local posgres files
 .pgdata
